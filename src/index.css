@@ -1,5 +1,27 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;700&display=swap");
+/* Fonts */
+@font-face {
+  font-family: "Noto Sans";
+  src: url("/public/assets/fonts/notosans-bold-webfont.woff2") format("woff2"),
+    url("/public/assets/fonts/notosans-bold-webfont.woff") format("woff");
+  font-weight: 700;
+}
 
+@font-face {
+  font-family: "Noto Sans";
+  src: url("/public/assets/fonts/notosans-light-webfont.woff2") format("woff2"),
+    url("/public/assets/fonts/notosans-light-webfont.woff") format("woff");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Noto Sans";
+  src: url("/public/assets/fonts/notosans-regular-webfont.woff2")
+      format("woff2"),
+    url("/public/assets/fonts/notosans-regular-webfont.woff") format("woff");
+  font-weight: 400;
+}
+
+/* Main Styles */
 :root {
   --background-color: #1d1a05;
   --heading-color: #b2ffa9;
@@ -16,14 +38,4 @@ body {
   font-family: "Noto Sans", sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
-}
-
-/* Components Styles */
-.Heading {
-  color: var(--heading);
-  font-size: 6em;
-  line-height: 90%;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-style: normal;
 }

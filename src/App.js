@@ -1,3 +1,6 @@
+import { useEffect, useRef } from "react";
+// import animateHeading from "./animations";
+
 import hero from "./images/hero.png";
 import "./App.css";
 

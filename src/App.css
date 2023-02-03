@@ -2,9 +2,7 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 4em;
-  overflow-x: hidden;
   margin: 2em 0 2em 2em;
-  /* background-color: red; */
 }
 
 /* Components Styles */
@@ -15,7 +13,7 @@
   font-weight: 700;
   text-transform: uppercase;
   font-style: normal;
-  padding: 1rem 0;
+  padding: 2.5rem 0;
 }
 
 .Social {
@@ -59,5 +57,22 @@ p {
 @media (max-width: 900px) {
   .App {
     grid-template-columns: 1fr;
+    margin: 1em;
+  }
+
+  .Heading {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  p {
+    max-width: 100%;
+    padding: 1em;
+    font-size: 1.5em;
+  }
+
+  .Social {
+    margin: 4em auto;
+    margin-bottom: 1em;
   }
 }

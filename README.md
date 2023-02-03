@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# Minimal Portfolio Website
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+[Screenshot](https://i.ibb.co/jJtmYj6/image.png)
 
 ## Available Scripts
 
