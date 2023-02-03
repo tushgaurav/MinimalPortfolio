@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import hero from "./images/hero.png";
+import "./App.css";
+
+import Heading from "./components/Heading";
+import Social from "./components/Social";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <section>
+        <Heading text="Software Developer" />
+        <img src={hero} alt="shivam yadav picture" />
+        <Social />
+      </section>
+
+      <section>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          I am <span className="bold">Shivam</span>, an aspiring software
+          developer driven by a passion for technology and problem-solving. My
+          goal is to use my skills and knowledge to create
+          <span className="bold">
+            {" "}
+            innovative solutions for a better world.
+          </span>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Heading text="Shivam Yadav" />
+      </section>
     </div>
   );
 }
