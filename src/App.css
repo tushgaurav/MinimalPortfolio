@@ -18,7 +18,7 @@
   font-weight: 700;
   text-transform: uppercase;
   font-style: normal;
-  padding: 2.5rem 0;
+  /* padding: 2.5rem 0; */
 }
 
 /* Heading Animation */
@@ -49,15 +49,15 @@ h1::before {
 
 h1 {
   position: relative;
-  font-size: 5rem;
+  padding: 0.2rem 0;
 }
 
 h1:hover {
-  color: var(--background-color);
+  color: var(--text-color);
 }
 
 .Social {
-  margin-top: 5em;
+  margin-top: 3em;
   display: flex;
   gap: 1em;
 }
@@ -68,10 +68,12 @@ h1:hover {
 
 /* Layouts */
 .App > section {
+  margin: 2em 0;
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 1em;
 }
 
 section > img {
@@ -85,7 +87,6 @@ p {
   max-width: 20ch;
   font-size: 2em;
   line-height: 90%;
-  margin-bottom: 2em;
 }
 
 .bold {
@@ -96,15 +97,18 @@ p {
 /* Animations */
 
 /* Responsive Styles */
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .App {
     grid-template-columns: 1fr;
     gap: 1em;
-    margin: 1em;
+    margin: 0;
   }
 
   .Heading {
     font-size: 2em;
+  }
+
+  h1 {
     text-align: center;
   }
 

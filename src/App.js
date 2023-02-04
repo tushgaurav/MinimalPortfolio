@@ -1,4 +1,4 @@
-import hero from "./images/hero.png";
+import hero from "./images/hero_img.png";
 import "./App.css";
 
 import { useCallback } from "react";
@@ -32,7 +32,9 @@ function App() {
       />
       <section>
         <Heading text="Software Developer" />
+
         <img src={hero} alt="shivam yadav picture" />
+
         <Social />
       </section>
 
