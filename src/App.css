@@ -5,6 +5,11 @@
   margin: 2em 0 2em 2em;
 }
 
+#tsparticles {
+  position: absolute;
+  z-index: -999;
+}
+
 /* Components Styles */
 .Heading {
   color: var(--heading-color);
@@ -14,6 +19,41 @@
   text-transform: uppercase;
   font-style: normal;
   padding: 2.5rem 0;
+}
+
+/* Heading Animation */
+h1::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+h1:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+h1::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0 0 0 0;
+  background: var(--orange);
+
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+
+h1 {
+  position: relative;
+  font-size: 5rem;
+}
+
+h1:hover {
+  color: var(--background-color);
 }
 
 .Social {
@@ -53,10 +93,13 @@ p {
   color: var(--heading-color);
 }
 
+/* Animations */
+
 /* Responsive Styles */
 @media (max-width: 900px) {
   .App {
     grid-template-columns: 1fr;
+    gap: 1em;
     margin: 1em;
   }
 
@@ -69,10 +112,11 @@ p {
     max-width: 100%;
     padding: 1em;
     font-size: 1.5em;
+    margin-bottom: 1em;
   }
 
   .Social {
-    margin: 4em auto;
+    margin: 2em auto;
     margin-bottom: 1em;
   }
 }
