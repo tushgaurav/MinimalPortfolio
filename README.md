@@ -2,9 +2,13 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-![Screenshot](https://i.ibb.co/jJtmYj6/image.png)
+![Screenshot](https://i.ibb.co/cr4pbm9/Shivam-Yadav-Software-Devloper.png)
 
-View the deployment [here](https://iamshivam.netlify.app)
+View the deployment [here](https://iamshivam.netlify.app).
+
+## Design File
+
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FwhfiIxpWvKkrRSECikISsq%2FShivamWebsite%3Fnode-id%3D0%253A1%26t%3DKt9phRErue03Pdr3-1" allowfullscreen></iframe>
 
 ## Available Scripts
 
