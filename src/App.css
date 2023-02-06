@@ -42,7 +42,6 @@ h1::before {
   left: 0;
   inset: 0 0 0 0;
   background: var(--orange);
-
   z-index: -1;
   transition: transform 0.3s ease;
 }

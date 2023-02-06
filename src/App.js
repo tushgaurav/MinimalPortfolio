@@ -1,7 +1,10 @@
 import hero from "./images/hero_img.png";
 import "./App.css";
 
-import { useCallback } from "react";
+import { useCallback, useRef, useLayoutEffect } from "react";
+
+import { gsap } from "gsap";
+
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import particlesConfig from "./config/particlesConfig";
@@ -22,8 +25,19 @@ function App() {
     await console.log(container);
   }, []);
 
+  const appRef = useRef();
+
+  useLayoutEffect(() => {
+    gsap.from(appRef.current, {
+      x: "-200px",
+      opacity: 0,
+      scale: 20,
+      duration: 2,
+    });
+  });
+
   return (
-    <div className="App">
+    <div className="App" ref={appRef}>
       <Particles
         id="tsparticles"
         init={particlesInit}
